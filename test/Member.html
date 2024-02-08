@@ -1,0 +1,499 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+      div.offcanvas {
+        margin-top: 56px;
+      }
+      a {
+        text-decoration: none;
+        color: black;
+      }
+      li {
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <!--상단바-->
+    <div class="container-fluid ">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling" style="background-color: gray;">=</button>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Admin</a>
+            </li>
+          </ul>
+          <!--상단 우측-->
+          <form>
+            <button class="btn btn-outline-success" type="submit">A</button>
+            <button class="btn btn-outline-success" type="submit">B</button>
+            <button class="btn btn-outline-success" type="submit">C</button>
+          </form>
+        </div>
+    </nav>
+  </div>
+
+    <!-- 사이드 바 -->
+  <div class="container">
+    <div class="row">
+      <div class="offcanvas offcanvas-start"  data-bs-scroll="true" data-bs-backdrop="true" tabindex="-1" id="offcanvasScrolling" >
+        <div class="offcanvas-title" id="offcanvasScrollingLabel" >
+          <div class="offcanvas-body" >
+            <div class="col-6">
+            <ul class="nav flex-column">
+          <li class="sidemenu">
+            <a class="nav-link" href="" style="color: black;">Home</a>
+          </li>
+          <li class="sidemenu">
+            <a class="nav-link" href="#" style="color: black;">공지사항</a>
+          </li>
+          <li class="sidemenu">
+            <a class="nav-link" href="#" style="color: black;">회원관리</a>
+          </li>
+          <li class="sidemenu">
+            <a class="nav-link" href="#" style="color: black;">스폰서관리</a>
+          </li>
+          <li class="sidemenu">
+            <a class="nav-link" href="#" style="color: black;">광고관리</a>
+          </li>
+          <li class="sidemenu">
+            <a class="nav-link" href="#" style="color: black;">서비스관리</a>
+          </li>
+          <li class="sidemenu">
+            <a class="nav-link" href="#" style="color: black;">커뮤니케이션</a>
+          </li>
+          <li class="sidemenu">
+            <a class="nav-link" href="#" style="color: black;">시스템관리</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" style="color: black;">개인정보관리</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" style="color: black;">test</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" style="color: black;">gps</a>
+          </li>
+        </ul>
+      </div>
+      <div>
+      <hr class="mt-5">
+      <button type="button" data-bs-dismiss="offcanvas" aria-label="Close" style="font-size: small;">  &#124;&larr; Collapsed View</button>
+    </div>
+    </div>
+  </div>
+    
+  </div>
+  
+
+
+  <!-- 중간 -->
+      <div class="col">
+        <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+          <p>
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#">Page 1</a></li>
+              <li class="breadcrumb-item"><a href="#"> Page 2 </a></li>
+              <li class="breadcrumb-item"><a href="#"> 회원관리</a></li>
+            </ol>
+          </p>
+        </nav>
+          <p><h3>Member</h3></p>
+      </div>
+
+        <p>
+            <div class="col">
+              <select class="form-select form-select-sm " aria-label=".form-select-lg example">
+                <option selected>N</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </div>
+            <div class="col">
+              <select class="form-select form-select-sm" aria-label=".form-select-lg example">
+                <option selected>수정일</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </div>
+            <div class="col ">
+              <input class="form-control form-control-sm" type="text" aria-label=".form-control-sm example">
+            </div>
+            <div class="col ">
+              <input class="form-control form-control-sm" type="text" aria-label=".form-control-sm example">
+          </div>
+        </p>
+        
+        <div class="col">
+          <select class="form-select form-select-sm" aria-label=".form-select-lg example">
+            <option selected>검색구분</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+        </div>
+          <div class="col">
+          <label for="inputPassword2" class="visually-hidden">Password</label>
+          <input class="form-control form-control-sm" type="text" aria-label=".form-control-sm example" placeholder="검색어">
+        </div>
+        
+        <div class="col-6">
+          <button type="submit" style="border-radius: 10px;">
+            <img src="image/search.png" height="20px">
+          </button>
+          <button type="submit" style="border-radius: 10px;" >
+          <img src="image/refresh.png" height="20px">
+          </button>
+        </div>
+      <hr class="mt-3">
+      
+      <!-- 테이블 -->
+      <div class="row">
+        <div class="col">
+      
+        <p>Total: 8927</p>
+        </div>
+          <div class="col-3">
+            <select class="form-select form-select-sm " aria-label=".form-select-lg example">
+              <option selected>10</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+            </select>
+            </div>
+        
+        <table class="table caption-top" style="text-align: center; font-size: 11px;">
+        <thead>
+          <th scope="col"><input type="checkbox"></th>
+          <th scope="col">#</th>
+          <th scope="col">탈퇴</th>
+          <th scope="col">코드</th>
+          <th scope="col">이름</th>
+          <th scope="col">아이디</th>
+          <th scope="col">성별</th>
+          <th scope="col">생일</th>
+          <th scope="col">이메일</th>
+          <th scope="col">모바일</th>
+          <th scope="col">예금주</th>
+          <th scope="col">은행</th>
+          <th scope="col">계좌번호</th>
+          <th scope="col">차량명</th>
+          <th scope="col">차량번호</th>
+          <th scope="col">차량타입</th>
+          <th scope="col">차량년도</th>
+          <th scope="col">차량컬러</th>
+          <th scope="col">차량등록지</th>
+          <th scope="col">등록일</th>
+          <th scope="col">수정일</th>
+        </tr>
+      </thead>
+      <tbody>
+        
+        <tr>
+          <td><input type="checkbox"></td>
+          <th scope="row">8527</th>
+          <td>N</td>
+          <td>8944</td>
+          <td>조동구</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>서울특별시 서초구</td>
+          <td>
+            2023-06-11<br>13:13:31
+          </td>
+          <td>2023-08-04<br>05:50:10</td>
+        </tr>
+        <tr>
+          <td><input type="checkbox"></td>
+          <th scope="row">8526</th>
+          <td>N</td>
+          <td>8943</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>회색</td>
+          <td>경기도 용인시</td>
+          <td>
+            2023-06-11<br>13:13:53
+          </td>
+          <td>2023-08-22<br>20:27:48</td>
+        </tr>
+        <tr>
+          <td><input type="checkbox"></td>
+          <th scope="row">8525</th>
+          <td>N</td>
+          <td>8942</td>
+          <td></td>
+          <td>dbbyeon@naver.com</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>
+            2023-06-12<br>14:23:53
+          </td>
+          <td>2023-08-25<br>22:17:28</td>
+        </tr>
+        <tr>
+          <td><input type="checkbox"></td>
+          <th scope="row">8524</th>
+          <td>N</td>
+          <td>8941</td>
+          <td></td>
+          <td>bboggwa@naver.com</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>
+            2023-06-12<br>13:21:23
+          </td>
+          <td>2023-08-25<br>22:47:58</td>
+        </tr>
+        <tr>
+          <td><input type="checkbox"></td>
+          <th scope="row">8523</th>
+          <td>N</td>
+          <td>8940</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>파랑(남색,곤색)</td>
+          <td>경기도 고양시</td>
+          <td>
+            2023-06-12<br>13:21:23
+          </td>
+          <td>2023-08-25<br>22:47:58</td>
+        </tr>
+        <tr>
+          <td><input type="checkbox"></td>
+          <th scope="row">8522</th>
+          <td>N</td>
+          <td>8939</td>
+          <td></td>
+          <td>qltjseo12@naver.com</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>
+            2023-06-12<br>13:31:21
+          </td>
+          <td>2023-08-25<br>14:42:51</td>
+        </tr>
+        <tr>
+          <td><input type="checkbox"></td>
+          <th scope="row">8521</th>
+          <td>N</td>
+          <td>8938</td>
+          <td></td>
+          <td>lmo541@naver.com</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>
+            2023-06-12<br>13:11:11
+          </td>
+          <td>2023-08-25<br>14:42:32</td>
+        </tr>
+        <tr>
+          <td><input type="checkbox"></td>
+          <th scope="row">8520</th>
+          <td>N</td>
+          <td>8937</td>
+          <td></td>
+          <td>yss2927@naver.com</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>
+            2023-06-13<br>12:21:12
+          </td>
+          <td>2023-08-25<br>22:32:42</td>
+        </tr>
+        <tr>
+          <td><input type="checkbox"></td>
+          <th scope="row">8519</th>
+          <td>N</td>
+          <td>8936</td>
+          <td></td>
+          <td>ock122233@naver.com</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>
+            2023-06-12<br>13:41:23
+          </td>
+          <td>2023-08-25<br>21:32:21</td>
+        </tr><tr>
+          <td><input type="checkbox"></td>
+          <th scope="row">8518</th>
+          <td>N</td>
+          <td>8935</td>
+          <td></td>
+          <td>pjw0519@naver.com</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>
+            2023-06-12<br>11:31:21
+          </td>
+          <td>2023-08-25<br>24:47:21</td>
+        </tr>
+        </tbody>
+      </table>
+    
+      <!--페이지네이션-->
+      <nav aria-label="Page navigation example">
+        <ul class="pagination pagination-sm justify-content-center" style="color: black;">
+          <li class="page-item">
+            <a class="page-link" href="#" aria-label="Previous">
+              <span aria-hidden="true">&laquo;</span>
+            </a>
+          </li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item"><a class="page-link" href="#">4</a></li>
+          <li class="page-item"><a class="page-link" href="#">5</a></li>
+          <li class="page-item">
+            <a class="page-link" href="#" aria-label="Next">
+              <span aria-hidden="true">&raquo;</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      
+        <div class="col">
+          <button type="button" style="background-color: red; border-radius: 10px;">
+            <img src="image/free-icon-recycle-bin-7491835.png" height="20px">
+          </button>
+        </div>
+        <div class="col-1">
+          <button type="button" class="btn btn-primary" style="border-radius: 10px;">
+            +
+          </button>
+        </div>
+      </div>
+
+      <!-- 하단 -->
+      <div class="col mt-4">
+        <nav class="navbar navbar-light bg-light">
+            <span class="navbar-brand"> </span>
+        </nav>
+      </div>
+  </div>
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>
