@@ -1,0 +1,493 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+      div.offcanvas {
+        margin-top: 56px;
+      }
+      a {
+        text-decoration: none;
+        color: black;
+      }
+      li {
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <!--상단바-->
+    <div class="container-fluid ">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling" style="background-color: gray;">=</button>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Admin</a>
+            </li>
+          </ul>
+          <!--상단 우측-->
+          <form>
+            <button class="btn btn-outline-success" type="submit">A</button>
+            <button class="btn btn-outline-success" type="submit">B</button>
+            <button class="btn btn-outline-success" type="submit">C</button>
+          </form>
+        </div>
+    </nav>
+  </div>
+
+    <!-- 사이드 바 -->
+  <div class="container">
+    <div class="row">
+      <div class="offcanvas offcanvas-start"  data-bs-scroll="true" data-bs-backdrop="true" tabindex="-1" id="offcanvasScrolling" >
+        <div class="offcanvas-title" id="offcanvasScrollingLabel" >
+          <div class="offcanvas-body" >
+            <div class="col-6">
+            <ul class="nav flex-column">
+          <li class="sidemenu">
+            <a class="nav-link" href="" style="color: black;">Home</a>
+          </li>
+          <li class="sidemenu">
+            <a class="nav-link" href="#" style="color: black;">공지사항</a>
+          </li>
+          <li class="sidemenu">
+            <a class="nav-link" href="#" style="color: black;">회원관리</a>
+          </li>
+          <li class="sidemenu">
+            <a class="nav-link" href="#" style="color: black;">스폰서관리</a>
+          </li>
+          <li class="sidemenu">
+            <a class="nav-link" href="#" style="color: black;">광고관리</a>
+          </li>
+          <li class="sidemenu">
+            <a class="nav-link" href="#" style="color: black;">서비스관리</a>
+          </li>
+          <li class="sidemenu">
+            <a class="nav-link" href="#" style="color: black;">커뮤니케이션</a>
+          </li>
+          <li class="sidemenu">
+            <a class="nav-link" href="#" style="color: black;">시스템관리</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" style="color: black;">개인정보관리</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" style="color: black;">test</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" style="color: black;">gps</a>
+          </li>
+        </ul>
+      </div>
+      <div>
+      <hr class="mt-5">
+      <button type="button" data-bs-dismiss="offcanvas" aria-label="Close" style="font-size: small;">  &#124;&larr; Collapsed View</button>
+    </div>
+    </div>
+  </div>
+    
+  </div>
+  
+
+
+  <!-- 중간 -->
+      <div class="col">
+        <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+          <p>
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#">Page 1</a></li>
+              <li class="breadcrumb-item"><a href="#"> Page 2 </a></li>
+              <li class="breadcrumb-item"><a href="#"> 회원관리</a></li>
+            </ol>
+          </p>
+        </nav>
+          <p><h3>Member</h3></p>
+      </div>
+
+        <p>
+            <div class="col">
+              <select class="form-select form-select-sm " aria-label=".form-select-lg example">
+                <option selected>N</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </div>
+            <div class="col">
+              <select class="form-select form-select-sm" aria-label=".form-select-lg example">
+                <option selected>수정일</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </div>
+            <div class="col ">
+              <input class="form-control form-control-sm" type="text" aria-label=".form-control-sm example">
+            </div>
+            <div class="col ">
+              <input class="form-control form-control-sm" type="text" aria-label=".form-control-sm example">
+          </div>
+        </p>
+        
+        <div class="col">
+          <select class="form-select form-select-sm" aria-label=".form-select-lg example">
+            <option selected>검색구분</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+        </div>
+          <div class="col">
+          <label for="inputPassword2" class="visually-hidden">Password</label>
+          <input class="form-control form-control-sm" type="text" aria-label=".form-control-sm example" placeholder="검색어">
+        </div>
+        
+        <div class="col-6">
+          <button type="submit" style="border-radius: 10px;">
+            <img src="image/search.png" height="20px">
+          </button>
+          <button type="submit" style="border-radius: 10px;" >
+          <img src="image/refresh.png" height="20px">
+          </button>
+        </div>
+      <hr class="mt-3">
+      
+      <!-- 내부 박스-->
+      <div class="col">
+        <div class="border border-secondary rounded" style="border-radius: 10;" >
+          <div class="border-bottom border-secondary p-4 h5 m-0">
+              기본 정보
+          </div>
+          <!-- 박스 안에 내용-->
+          <div class="row gx-6">
+          <div class="col-3">
+            코드<span class="text-danger fs-0">*</span>
+            <input class="form-control form-control-sm" type="text" placeholder="자동생성" aria-label="Disabled input example" disabled>
+          </div>
+        </div>
+          <div class="row gx-6">
+            <p>
+              <div class="col-3">
+                소셜아이디<span class="text-danger fs-0">*</span>
+                <input class="form-control form-control-sm" type="text" aria-label=".form-control-sm example" placeholder="영대소문자,숫자">
+              </div>
+              <div class="col">
+                소셜<span class="text-danger fs-0">*</span>
+                <select class="form-select form-select-sm" aria-label=".form-select-lg example" >
+                  <option selected>선택하세요</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </div>
+              <div class="col-3">
+                이름<span class="text-danger fs-0">*</span>
+                <input class="form-control form-control-sm" type="text" aria-label=".form-control-sm example" placeholder="영대소문자,숫자">
+              </div>
+              <div class="col-3">
+                성별<span class="text-danger fs-0">*</span>
+                <select class="form-select form-select-sm" aria-label=".form-select-lg example">
+                  <option selected>선택하세요</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </div>
+            </p>
+          </div>
+          <div class="row gx-6">
+            <p>
+              <div class="col-3">
+                출생일<span class="text-danger fs-0">*</span>
+                <input class="form-control form-control-sm" type="text" aria-label=".form-control-sm example" placeholder="영대소문자,숫자">
+              </div>
+              <div class="col-3">
+                이메일<span class="text-danger fs-0">*</span>
+                <input class="form-control form-control-sm" type="text" aria-label=".form-control-sm example" placeholder="영대소문자,숫자">
+              </div>
+              <div class="col-3">
+                전화번호<span class="text-danger fs-0">*</span>
+                <input class="form-control form-control-sm" type="text" aria-label=".form-control-sm example" placeholder="영대소문자,숫자">
+              </div>
+            </p>
+          </div>
+          <div class="row gx-6">
+            <p>
+              <div class="col">
+                자택지역1<span class="text-danger fs-0">*</span>
+                <select class="form-select form-select-sm" aria-label=".form-select-lg example">
+                  <option selected>선택하세요</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </div>
+              <div class="col">
+                자택지역2<span class="text-danger fs-0">*</span>
+                <select class="form-select form-select-sm" aria-label=".form-select-lg example">
+                  <option selected>선택하세요</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </div>
+              <div class="col">
+                사무실지역1<span class="text-danger fs-0">*</span>
+                <select class="form-select form-select-sm" aria-label=".form-select-lg example">
+                  <option selected>선택하세요</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </div>
+              <div class="col">
+                사무실지역2<span class="text-danger fs-0">*</span>
+                <select class="form-select form-select-sm" aria-label=".form-select-lg example">
+                  <option selected>선택하세요</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </div>
+            </p>
+          </div>
+          <div class="row gx-6">
+            <p>
+              <div class="col">
+                우편번호<span class="text-danger fs-0">*</span>
+                <div class="input-group mb-3">
+                  <input type="text" class="form-control form-control-sm" placeholder="숫자만" aria-label="Recipient's username" aria-describedby="button-addon2">
+                  <button class="btn btn-outline-secondary" type="button" id="button-addon2">X</button>
+                </div>                
+              </div>
+              <div class="col">
+                주소<span class="text-danger fs-0">*</span>
+                <input class="form-control form-control-sm" type="text" aria-label=".form-control-sm example" placeholder="숫자만">
+              </div>
+              <div class="col">
+                상세주소<span class="text-danger fs-0">*</span>
+                <input class="form-control form-control-sm" type="text" aria-label=".form-control-sm example" placeholder="숫자만">
+              </div>
+              <div class="col">
+                참고목록<span class="text-danger fs-0">*</span>
+                <input class="form-control form-control-sm" type="text" aria-label=".form-control-sm example" placeholder="숫자만">
+              </div>
+            </p>
+          </div>
+          <div class="row gx-6">
+            <p>
+              <div class="col">
+                이용약관<span class="text-danger fs-0">*</span>
+                <select class="form-select form-select-sm" aria-label=".form-select-lg example">
+                  <option selected>O</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </div>
+              <div class="col">
+                개인정보<span class="text-danger fs-0">*</span>
+                <select class="form-select form-select-sm" aria-label=".form-select-lg example">
+                  <option selected>O</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </div>
+              <div class="col">
+                위치정보<span class="text-danger fs-0">*</span>
+                <select class="form-select form-select-sm" aria-label=".form-select-lg example">
+                  <option selected>O</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </div>
+              <div class="col">
+                앱<span class="text-danger fs-0">*</span>
+                <select class="form-select form-select-sm" aria-label=".form-select-lg example">
+                  <option selected>O</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </div>
+            </p>
+          </div>
+          <div class="row gx-6">
+            <p>
+              <div class="col-3">
+                앱 상태<span class="text-danger fs-0">*</span>
+                <select class="form-select form-select-sm" aria-label=".form-select-lg example">
+                  <option selected>O</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </div>
+              <div class="col-3">
+                앱공지<span class="text-danger fs-0">*</span>
+                <select class="form-select form-select-sm" aria-label=".form-select-lg example">
+                  <option selected>O</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </div>
+              <div class="col-3">
+                앱 탈퇴<span class="text-danger fs-0">*</span>
+                <select class="form-select form-select-sm" aria-label=".form-select-lg example">
+                  <option selected>O</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </div>
+            </p>
+          </div>
+          <div class="row gx-6">
+            <p>
+              <div class="col">
+                우편번호<span class="text-danger fs-0">*</span>
+                <div class="input-group">
+                  <input type="text" class="form-control form-control-sm" placeholder="숫자만" aria-label="Recipient's username" aria-describedby="button-addon2">
+                  <button class="btn btn-outline-secondary" type="button" id="button-addon2">X</button>
+                </div>    
+              </div>
+              <div class="col">
+                주소<span class="text-danger fs-0">*</span>
+                <input class="form-control form-control-sm" type="text" aria-label=".form-control-sm example" placeholder="숫자만">
+              </div>
+              <div class="col">
+                상세주소<span class="text-danger fs-0">*</span>
+                <input class="form-control form-control-sm" type="text" aria-label=".form-control-sm example" placeholder="숫자만">
+              </div>
+              <div class="col">
+                참고항목<span class="text-danger fs-0">*</span>
+                <input class="form-control form-control-sm" type="text" aria-label=".form-control-sm example" placeholder="숫자만">
+              </div>
+            </p>
+          </div>
+          <div class="row gx-6">
+            <p>
+              <div class="col-3">
+                모바일 OS<span class="text-danger fs-0">*</span>
+                <select class="form-select form-select-sm" aria-label=".form-select-lg example">
+                  <option selected>선택하세요</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </div>
+              <div class="col-3">
+                모바일토큰<span class="text-danger fs-0">*</span>
+                <input class="form-control form-control-sm" type="text" aria-label=".form-control-sm example" placeholder="숫자만">
+              </div>
+              <div class="col-3">
+                FCM토큰<span class="text-danger fs-0">*</span>
+                <input class="form-control form-control-sm" type="text" aria-label=".form-control-sm example" placeholder="숫자만">
+              </div>
+            </p>
+          </div>
+          <div class="row gx-6">
+            <p>
+              <div class="col-3">
+                예금주<span class="text-danger fs-0">*</span>
+                <input class="form-control form-control-sm" type="text" aria-label=".form-control-sm example" placeholder="숫자만">
+              </div>
+              <div class="col-3">
+                은행<span class="text-danger fs-0">*</span>
+                <input class="form-control form-control-sm" type="text" aria-label=".form-control-sm example" placeholder="숫자만">
+              </div>
+              <div class="col-3">
+                계좌번호<span class="text-danger fs-0">*</span>
+                <input class="form-control form-control-sm" type="text" aria-label=".form-control-sm example" placeholder="숫자만">
+              </div>
+            </p>
+          </div>
+          <div class="row gx-6">
+            <p>
+              <div class="col">
+                차량명<span class="text-danger fs-0">*</span>
+                <input class="form-control form-control-sm" type="text" aria-label=".form-control-sm example" placeholder="숫자만">
+              </div>
+              <div class="col">
+                차량번호<span class="text-danger fs-0">*</span>
+                <input class="form-control form-control-sm" type="text" aria-label=".form-control-sm example" placeholder="숫자만">
+              </div>
+              <div class="col">
+                차량타입<span class="text-danger fs-0">*</span>
+                <input class="form-control form-control-sm" type="text" aria-label=".form-control-sm example" placeholder="숫자만">
+              </div>
+              <div class="col">
+                차량년식<span class="text-danger fs-0">*</span>
+                <input class="form-control form-control-sm" type="text" aria-label=".form-control-sm example" placeholder="숫자만">
+              </div>
+            </p>
+          </div>
+          <div class="row gx-6">
+            <p>
+              <div class="col-3">
+                차량색깔<span class="text-danger fs-0">*</span>
+                <input class="form-control form-control-sm" type="text" aria-label=".form-control-sm example" placeholder="숫자만">
+              </div>
+              <div class="col-3">
+                차량등록지<span class="text-danger fs-0">*</span>
+                <input class="form-control form-control-sm" type="text" aria-label=".form-control-sm example" placeholder="숫자만">
+              </div>
+            </p>
+          </div>
+        </div>
+      </div>
+    
+      <!-- 페이지네이션 -->
+      <nav aria-label="Page navigation example">
+        <ul class="pagination pagination-sm justify-content-center" style="color: black;">
+          <li class="page-item">
+            <a class="page-link" href="#" aria-label="Previous">
+              <span aria-hidden="true">&laquo;</span>
+            </a>
+          </li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item"><a class="page-link" href="#">4</a></li>
+          <li class="page-item"><a class="page-link" href="#">5</a></li>
+          <li class="page-item">
+            <a class="page-link" href="#" aria-label="Next">
+              <span aria-hidden="true">&raquo;</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      
+        <div class="col">
+          <button type="button" style="background-color: red; border-radius: 10px;">
+            <img src="image/free-icon-recycle-bin-7491835.png" height="20px">
+          </button>
+        </div>
+        <div class="col-1">
+          <button type="button" class="btn btn-primary" style="border-radius: 10px;">
+            +
+          </button>
+        </div>
+      </div>
+
+      <!-- 하단 -->
+      <div class="col mt-4">
+        <nav class="navbar navbar-light bg-light">
+            <span class="navbar-brand"> </span>
+        </nav>
+      </div>
+  </div>
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>
